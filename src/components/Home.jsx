@@ -5,7 +5,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Card from "./Card";
 import Cart from "./Cart";
-
+// toast 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Home = () => {
@@ -32,7 +34,7 @@ const Home = () => {
         let creditCost = card.credit;
         let cost = card.price ;
         if(isExit){
-          return  alert("Already Exit...")
+          return  toast("Already Exit...")
         }else{
             carts.forEach((item)=>{
                 cost = cost + item.price
@@ -45,7 +47,7 @@ const Home = () => {
         const creditRemaing = 20 - creditCost;
         if (creditCost > 20) {
             // alert('end credit')
-          return  alert("Oops! Not enough credit hour")
+          return  toast("Oops! Not enough credit hour")
           } else{
 
 

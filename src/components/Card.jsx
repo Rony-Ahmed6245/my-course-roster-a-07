@@ -1,4 +1,4 @@
-
+import { ToastContainer} from 'react-toastify';
 const Card = ({card, handelClickCard}) => {
     const {cover, des, title, price, credit} = card
     return (
@@ -29,7 +29,7 @@ const Card = ({card, handelClickCard}) => {
                              <button 
                              onClick={()=>handelClickCard(card)}
                              className="btn text-lg font-semibold outline-none text-[#fff] hover:text-[black] w-full bg-[#2F80ED]">Select</button>
-                            
+                            <ToastContainer />
                     </div>
                 </div>
             </div>
