@@ -1,3 +1,4 @@
+import Header from "./components/Header"
 
 
 
@@ -6,8 +7,11 @@ function App() {
 
   return (
     <>
-      
-      <h1>helo</h1>
+     <div className="max-w-7xl	mx-auto pb-32">
+        <Header></Header>
+        
+      </div>
+     
     </>
   )
 }
