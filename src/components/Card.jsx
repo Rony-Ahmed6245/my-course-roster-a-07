@@ -8,20 +8,20 @@ const Card = ({card, handelClickCard}) => {
                     <img className="w-full"  src={cover} alt={title} />
                 </figure>
                 <div className="">
-                    <div className="">
+                    <div className="h-[180px]">
                         <h2 className="card-title py-4 text-lg	font-semibold">{title}</h2>
-                        <p className="py-4 font-normal	">{des}</p>
+                        <p className="py-4 font-normal	text-sm	text-[#1C1B1B99]">{des}</p>
                         
                     </div>
                     <div className="flex justify-between items-center py-4">
                             <div className="flex">
                                  <img src={'https://i.ibb.co/McJpgCK/dollar-sign-1.png'} alt="" />
-                                <h3 className="font-medium		">Price:{price}</h3>
+                                <h3 className="font-medium	text-base	">Price:{price}</h3>
                                 
                             </div>
                             <div className="flex">
                                 <img src={'https://i.ibb.co/jz7S1X8/Frame.png'} alt="" />
-                                <h3 className="font-medium 	">Credit:{credit}hr</h3>
+                                <h3 className="font-medium 	text-base">Credit:{credit}hr</h3>
                             </div>
                         </div>
 
