@@ -1,8 +1,13 @@
+
+// import toastify 
 import { ToastContainer} from 'react-toastify';
+
+
 const Card = ({card, handelClickCard}) => {
+    // destracturing of card 
     const {cover, des, title, price, credit} = card
     return (
-        <div>
+        <>
           <div className="card   bg-base-100 shadow-xl p-4 ">
                 <figure>
                     <img className="w-full"  src={cover} alt={title} />
@@ -14,17 +19,16 @@ const Card = ({card, handelClickCard}) => {
                         
                     </div>
                     <div className="flex justify-between items-center py-4">
-                            <div className="flex">
-                                 <img src={'https://i.ibb.co/McJpgCK/dollar-sign-1.png'} alt="" />
-                                <h3 className="font-medium	text-base	">Price:{price}</h3>
-                                
-                            </div>
-                            <div className="flex">
-                                <img src={'https://i.ibb.co/jz7S1X8/Frame.png'} alt="" />
-                                <h3 className="font-medium 	text-base">Credit:{credit}hr</h3>
-                            </div>
+                        <div className="flex">
+                                <img src={'https://i.ibb.co/McJpgCK/dollar-sign-1.png'} alt="" />
+                            <h3 className="font-medium	text-base	">Price:{price}</h3>
+                            
                         </div>
-
+                        <div className="flex">
+                            <img src={'https://i.ibb.co/jz7S1X8/Frame.png'} alt="" />
+                            <h3 className="font-medium 	text-base">Credit:{credit}hr</h3>
+                        </div>
+                    </div>
                     <div className="">
                              <button 
                              onClick={()=>handelClickCard(card)}
@@ -33,7 +37,7 @@ const Card = ({card, handelClickCard}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
