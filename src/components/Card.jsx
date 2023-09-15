@@ -15,12 +15,12 @@ const Card = ({card, handelClickCard}) => {
                     </div>
                     <div className="flex justify-between items-center py-4">
                             <div className="flex">
-                                 
+                                 <img src={'https://i.ibb.co/McJpgCK/dollar-sign-1.png'} alt="" />
                                 <h3 className="font-medium		">Price:{price}</h3>
                                 
                             </div>
                             <div className="flex">
-                                
+                                <img src={'https://i.ibb.co/jz7S1X8/Frame.png'} alt="" />
                                 <h3 className="font-medium 	">Credit:{credit}hr</h3>
                             </div>
                         </div>
